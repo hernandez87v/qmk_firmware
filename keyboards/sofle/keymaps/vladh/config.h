@@ -15,7 +15,9 @@
 */
   #pragma once
 
-
+/* Select hand configuration */
+// #define MASTER_LEFT
+#define MASTER_RIGHT
 //#define USE_MATRIX_I2C
 
 /* Select hand configuration */
