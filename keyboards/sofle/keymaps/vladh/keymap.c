@@ -402,7 +402,14 @@ static void render_logo(void) {
 static void print_status_narrow(void) {
     // Print current mode
     oled_write_P(PSTR("\n\n"), false);
-    oled_write_ln_P(PSTR("Dane\nEvans"), false);
+    oled_write_ln_P(PSTR("VAN\nCITY"), false);
+
+    oled_write_ln_P(PSTR(""), false);
+        // Host Keyboard LED Status
+    led_t led_state = host_keyboard_led_state();
+    oled_write_P(led_state.num_lock ? PSTR("NUM") : PSTR("    "), false);
+    oled_write_ln_P(PSTR(""), false);
+    oled_write_P(led_state.caps_lock ? PSTR("CAP") : PSTR("    "), false);
 
     oled_write_ln_P(PSTR(""), false);
 
@@ -411,7 +418,7 @@ static void print_status_narrow(void) {
 
     switch (get_highest_layer(default_layer_state)) {
         case _QWERTY:
-            oled_write_ln_P(PSTR("Qwrt"), false);
+            oled_write_ln_P(PSTR("QWRT"), false);
             break;
         case _COLEMAK:
             oled_write_ln_P(PSTR("Clmk"), false);
@@ -430,22 +437,22 @@ static void print_status_narrow(void) {
         case _COLEMAK:
         case _QWERTY:
         case _COLEMAKDH:
-            oled_write_P(PSTR("Base\n"), false);
+            oled_write_P(PSTR("BASE\n"), false);
             break;
         case _RAISE:
-            oled_write_P(PSTR("Raise"), false);
+            oled_write_P(PSTR("RAISE"), false);
             break;
         case _LOWER:
-            oled_write_P(PSTR("Lower"), false);
+            oled_write_P(PSTR("LOWER"), false);
             break;
         case _ADJUST:
-            oled_write_P(PSTR("Adj\n"), false);
+            oled_write_P(PSTR("ADJ\n"), false);
             break;
         case _NUMPAD:
-            oled_write_P(PSTR("Nump\n"), false);
+            oled_write_P(PSTR("NUMP\n"), false);
             break;
         case _SWITCH:
-            oled_write_P(PSTR("Swit\n"), false);
+            oled_write_P(PSTR("SWIT\n"), false);
             break;
         default:
             oled_write_ln_P(PSTR("Undef"), false);
