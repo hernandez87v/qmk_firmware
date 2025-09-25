@@ -185,11 +185,11 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   //,------------------------------------------------.                           ,---------------------------------------------------.
   _______, KC_F1, KC_F2, KC_F3, KC_F4, KC_F5,                        KC_P7, KC_P8, KC_P9, KC_PSLS, KC_HOME, KC_F11,
   //|------+-------+--------+--------+--------+------|                          |--------+-------+--------+--------+--------+---------|
-  UG_TOGG,XXXXXXX,EE_CLR,QK_BOOT,XXXXXXX,XXXXXXX,                    KC_P4, KC_P5, KC_P6, KC_PAST, KC_PGUP, KC_BSPC,
+  UG_TOGG,XXXXXXX,EE_CLR,QK_BOOT,XXXXXXX,MS_WHLU,                    KC_P4, KC_P5, KC_P6, KC_PAST, KC_PGUP, KC_BSPC,
   //|------+-------+--------+--------+--------+------|                          |--------+-------+--------+--------+--------+---------|
-  UG_NEXT,UG_HUEU,UG_SATU,UG_VALU,MS_UP,KC_PGUP,                   KC_P1, KC_P2, KC_P3, KC_PMNS, KC_PGDN, KC_DEL,
+  UG_NEXT,UG_HUEU,UG_SATU,UG_VALU,_______,KMS_WHLD,                   KC_P1, KC_P2, KC_P3, KC_PMNS, KC_PGDN, KC_DEL,
   //|------+-------+--------+--------+--------+------|  ===  |          |  ===  |--------+-------+--------+--------+--------+---------|
-  UG_PREV,UG_HUED,UG_SATD,UG_VALD,MS_DOWN,KC_PGDN,_______,   _______,KC_PENT, KC_P0, KC_PDOT, KC_PPLS, KC_END, _______,
+  UG_PREV,UG_HUED,UG_SATD,UG_VALD,MS_WHLL,KMS_WHLR,_______,   _______,KC_PENT, KC_P0, KC_PDOT, KC_PPLS, KC_END, _______,
   //|------+-------+--------+--------+--------+------|  ===  |          |  ===  |--------+-------+--------+--------+--------+---------|
         _______, _______, _______, _______, _______,          _______, KC_CALC, KC_NUM, _______, _______
   //            \--------+--------+--------+---------+-------|          |--------+---------+--------+---------+-------/
